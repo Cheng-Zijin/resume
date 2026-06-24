@@ -45,7 +45,7 @@ Hit branch [master](https://github.com/billryan/resume/tree/master) if you wanna
 感谢万能的『云计算』，`\LaTeX` 编译也可以放到云端了！使用这种方法无需在本机安装诸如 `CTeX/TeXlive/MacTeX` 等发行版，网站上还能有历史版本记录，十分方便！最简单的方法，浏览器中打开 [模板链接](https://www.overleaf.com/latex/templates/bill-ryans-elegant-latex-resume/xcqmhktmzmsw), 按需更改自己的名字和联系方式等。
 在线预览时需要注意 Overleaf 自带的 PDF 阅读器对中文支持不太好(可能会显示乱码)，这时在编辑界面的左侧菜单选择使用 native 阅读器即可。
 
-中文模板的文件为 `resume-zh_CN.tex`, 英文模板的文件为 `resume.tex`, 带照片的模板文件为 `resume_photo.tex`.
+中文模板的文件为 `resume-zh_CN.tex`, 带照片的中文模板文件为 `resume-zh_CN_photo.tex`, 英文模板的文件为 `resume.tex`, 带照片的英文模板文件为 `resume_photo.tex`.
 
 ### latexonline.cc
 
@@ -59,6 +59,7 @@ Hit branch [master](https://github.com/billryan/resume/tree/master) if you wanna
 xelatex resume.tex % 编译英文简历
 xelatex resume_photo.tex % 编译带照片的简历
 xelatex resume-zh_CN.tex % 编译中文简历
+xelatex resume-zh_CN_photo.tex % 编译带照片的中文简历
 ```
 
 ### 中英文双语支持
@@ -77,6 +78,7 @@ xelatex resume-zh_CN.tex % 编译中文简历
 
 英文模板范例见 <https://github.com/billryan/resume/blob/zh_CN/resume.tex> 
 中文模板范例见 <https://github.com/billryan/resume/blob/zh_CN/resume-zh_CN.tex>
+带照片的中文模板范例见 <https://github.com/billryan/resume/blob/zh_CN/resume-zh_CN_photo.tex>
 
 中文模板与英文模板的区别仅有两行——使用中文时仅需反注释以下两行，模板中已默认启用，第一次编译时耗时相对较长(引入了外部中文字型)，耐心等待下。
 
@@ -112,6 +114,7 @@ xelatex myresume-zh_CN
 想自己添加新的宏的可以先看看 [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 和 [How to write a LaTeX class file and design your own CV (Part 2) - ShareLaTeX](https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 了解下该模板的简单背景。
 
 - `\name`: 姓名
+- `\photoHeader`: 带照片模板的页眉，参数为姓名和联系信息，默认使用 `avatar.jpg`
 - `\email`: 邮箱
 - `\linkedin`: LinkedIn
 - `\basicInfo`: 联系信息, 按需加入
