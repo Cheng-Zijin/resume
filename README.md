@@ -114,7 +114,7 @@ xelatex myresume-zh_CN
 想自己添加新的宏的可以先看看 [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 和 [How to write a LaTeX class file and design your own CV (Part 2) - ShareLaTeX](https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 了解下该模板的简单背景。
 
 - `\name`: 姓名
-- `\photoHeader`: 带照片模板的页眉，参数为姓名和联系信息，默认使用 `avatar.jpg`
+- `\photoHeader`: `resume-zh_CN_photo.tex` 中定义的带照片页眉，参数为姓名和联系信息，默认使用 `avatar`
 - `\email`: 邮箱
 - `\linkedin`: LinkedIn
 - `\basicInfo`: 联系信息, 按需加入
